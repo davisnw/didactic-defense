@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title:  "Who are the Stakeholders in a Secure System?"
+next: SecurityEnvironment
 ---
 
 * Your internal users
