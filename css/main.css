@@ -163,3 +163,18 @@ ul.posts span {
 .post pre.terminal code {
   background-color: #333;
 }
+
+/*****************************************************************************/
+/*
+/* Other
+/*
+/*****************************************************************************/
+
+.acronym dt:first-letter {
+	font-weight: bold;
+}
+
+dd {
+	text-indent: 25px;
+	margin-bottom: 10px;
+}
