@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title:  "What is Security?"
+next: SecurityStakeholders
 ---
 
 # The "Classic 3" - <abbr title="Confidentiality, Integrity, Availability">CIA</abbr>
@@ -15,4 +16,3 @@ title:  "What is Security?"
 	<dt>Availability</dt>
 	<dd>The information is available to authorized users.</dd>
 </dl>
-

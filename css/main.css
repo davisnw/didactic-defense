@@ -178,3 +178,7 @@ dd {
 	text-indent: 25px;
 	margin-bottom: 10px;
 }
+
+.bottom-nav {
+	text-align:right;
+}
