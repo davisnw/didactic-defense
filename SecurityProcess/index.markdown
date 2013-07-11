@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title:  "The Security Process"
+next: "SecurityMindset"
 ---
 # Security: A process, not a product
 
