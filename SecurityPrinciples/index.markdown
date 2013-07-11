@@ -13,7 +13,7 @@ next: VulnerabilityCatalog
 	* Example: File upload - **Evil!**
 	* Example: Data in a database - **Evil!**
 
-2. **Prevent Code and Data Confusion** (strategies in order of (my) preference)
+2. **Prevent Code and Data Confusion** Here the term "Code" is used loosely to include anything that gets executed or interpreted. (strategies in order of (my) preference)
 
     1. Strategy: Separate Command and Data
 
@@ -56,9 +56,13 @@ next: VulnerabilityCatalog
 
 7. **Good algorithms can be subverted by bad implementations**
 
-	1. Srategy: Use trusted cryptographic implementations
+	1. Strategy: Use trusted cryptographic implementations
 	
-8. **Consider authentication and authorization**
+8. **Consider authentication, authorization and auditing**
+
+	1. Consider **Action** authorization
+	2. Consider **Data** authorization
+	3. Consider maintaining "who did what when with which information"
 
 9. **Consider Pyschology**
 
@@ -80,3 +84,4 @@ next: VulnerabilityCatalog
 	1. Strategy: Use [Nonces](http://en.wikipedia.org/wiki/Cryptographic_nonce) to prevent replay
 	2. Strategy: Use reconciliation to detect replay (e.g. in financial systems)
 	3. Strategy: Use digital signatures to verify identity
+	4. Strategy: Protect your private keys

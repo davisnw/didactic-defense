@@ -43,6 +43,9 @@ Has **Proactive**, **Reactive** components.
 
 *Reactive* components include such things as having a plan in place if a vulnerability is exploited, having a plan to timely address issues brought to your attention, etc.
 
+Has a plan for **Monitoring**
+There are many different things that can be monitored.  From a developer's standpoint, a good thing to monitor is exception logs.  Exceptions can sometimes indicate security vulnerabilities.  Though, don't swallow exceptions - that just hides the problem, without fixing it.  It can also sometimes work to your favor in determining whether a vulnerability has actually been exploited.
+
 # The Role of Psychology
 Any Security Process should give some consideration to the human aspect.  
 
