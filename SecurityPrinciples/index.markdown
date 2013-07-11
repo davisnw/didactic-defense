@@ -1,8 +1,17 @@
 ---
 layout: tutorial
 title:  "The Security Principles"
+next: VulnerabilityCatalog
 ---
-1. **All user modifiable input is evil**
+1. **All user modifiable input is evil** (which means "handle with extreme caution").
+	It is not that these things should be avoided, just that they must be handled correctly.
+	* Example: Http Headers - **Evil!**
+	* Example: Javascript Validation - **Evil!** (javascript validation is easily circumvented. Treat it as a UI nicety, but do the final checks on the server side!)
+	* Example: Http Post form values - **Evil!**
+	* Example: Url query string parameters - **Evil!**
+	* Example: Cookies - **Evil!**
+	* Example: File upload - **Evil!**
+	* Example: Data in a database - **Evil!**
 
 2. **Prevent Code and Data Confusion** (strategies in order of (my) preference)
 
@@ -36,21 +45,21 @@ title:  "The Security Principles"
 	
 		1. Strategy: Use cryptographically strong randomness.
 		
-6. **Abstractions are Leaky**
+4. **Abstractions are Leaky**
 
 	1. Strategy: Understand the fundamental operating principles of your abstraction
 	
-7. **Vulnerabilities can combine**
+5. **Vulnerabilities can combine**
 
-8. **Know the difference between Encryption and Encoding**
+6. **Know the difference between Encryption and Encoding**
 
-9. **Good algorithms can be subverted by bad implementations**
+7. **Good algorithms can be subverted by bad implementations**
 
 	1. Srategy: Use trusted cryptographic implementations
 	
-10. **Consider authentication and authorization**
+8. **Consider authentication and authorization**
 
-11. **Consider Pyschology**
+9. **Consider Pyschology**
 
     1. Strategy: Help your users know when they are being spoofed.
 
@@ -59,18 +68,14 @@ title:  "The Security Principles"
 		* Example: Use SSL with a cert issued by a CA.
 		* Example: Avoid blind redirects.
 
-12. **Know (and defend) your trust entry points**
+10. **Know (and defend) your trust entry points**
 
-13. **The Same Data Can Have Different Representations**
+11. **The Same Data Can Have Different Representations**
 
 	1. Strategy: Canonicalize before making a security decision
 	
-14. 
+12. **Encrypted data can still be used to attack a system**
 
-Canonicalization?
-
-Principles vs classification?
-
-* Priviledge Escalation
-* Side-channel
-* Replay
+	1. Strategy: Use [Nonces](http://en.wikipedia.org/wiki/Cryptographic_nonce) to prevent replay
+	2. Strategy: Use reconciliation to detect replay (e.g. in financial systems)
+	3. Strategy: Use digital signatures to verify identity
