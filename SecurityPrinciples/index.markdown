@@ -44,6 +44,7 @@ next: VulnerabilityCatalog
 	2. Corollary: **Ensure secrets are not guessable**
 	
 		1. Strategy: Use cryptographically strong randomness.
+		2. Strategy: Always salt your hash [Salted Password Hashing - Doing it Right](http://crackstation.net/hashing-security.htm)
 		
 4. **Abstractions are Leaky**
 
