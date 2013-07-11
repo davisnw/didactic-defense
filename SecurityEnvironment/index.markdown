@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title:  "The Security Environment"
+next: SecurityProcess
 ---
 
 [![Security Environment](../images/SecurityEnvironment.svg)](../images/SecurityEnvironment.svg)
@@ -10,7 +11,7 @@ title:  "The Security Environment"
 Security can be compromised at many points in the process.
 
 1. We start at the innermost circle with hardware components and peripherals.
-  * Harddrives contain "data at rest"
+  * Harddrives contain "data at rest", and can contain sensitive information from running applications whose memory has been paged to disk.
   * Network hardware, USB devices and printers can be used to transfer data to outer layers.
   * Microphones and webcams can be used to record potentially sensitive information
   * Hardware chips from malicious manufactures could route data elsewhere surreptitiously

@@ -12,6 +12,7 @@ next: SecurityEnvironment
 * Your network engineers
 * Your facilities managment
 * Your security officer
+* Your legal council
 * Your purchasing office
 * Your fellow employees
 * Your stockholders
