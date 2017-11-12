@@ -64,4 +64,4 @@ A word on that last bullet - in a customer service organization has as its goal 
 # The Microsoft Security Development Lifecycle
 Microsoft has documented its own Security Development Lifecycle and also provided tools to aid in the implementation of it.  It is one example of a mature development methodology that takes security into account.
 
-See: [Microsoft Security Development Lifecyle](http://www.microsoft.com/security/sdl/default.aspx)
+See: [Microsoft Security Development Lifecyle](https://www.microsoft.com/en-us/sdl/)
